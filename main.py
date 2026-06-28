@@ -10,7 +10,7 @@ def print_result(name: str, result):
     print(f"\n{'='*40}")
     print(f"Algoritmo : {name}")
     if result.found:
-        print(f"Solução   : {' → '.join(result.actions)}")
+        print(f"Solucao   : {' -> '.join(result.actions)}")
         print(f"Custo     : {result.path_cost}")
         print(f"Profund.  : {result.depth}")
     else:
@@ -21,7 +21,7 @@ def print_result(name: str, result):
 
 
 if __name__ == "__main__":
-    initial = State((2, 8, 3, 1, 6, 4, 7, 0, 5))   # ~20 movimentos até a solução
+    initial = State((1, 2, 3, 4, 0, 6, 7, 5, 8))   # solucionável
 
     print("Estado inicial:")
     print(initial)
